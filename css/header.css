@@ -1,0 +1,16 @@
+header .row {
+    display: flex;
+    justify-content: space-between;/*вирівнювання по основній осі (main axis)*/
+    align-items: center;           /*вирівнювання по ортогональна осі (cross axis)*/
+    align-content: center;        /*вирівнювання рядів елементів по ортог. осі (cross axis)*/
+    flex-direction: row;          /* напрям головної осі*/
+    min-height: 100dvh;           /* дайнамік вюпорт хай*/
+    flex-wrap: wrap;
+     
+
+}
+
+header .row .col:last-child{
+   
+
+}

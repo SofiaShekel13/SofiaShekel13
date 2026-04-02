@@ -1,0 +1,63 @@
+:root {
+    --txt-01-color: #555;
+    --txt-02-color: #ccc;
+ --bg-03-color: #ddd;
+ --btn-01-color: #900;
+ --btn-02-color: #400;
+ --mob-padding: 20px;
+ --ipad-padding: 50px;
+ --max-width: 1380px;
+ --vert-desk-pad:50px; /*Відступи рло вертикалі у секціях desktop*/
+ --vert-mob-pad:25px; /*Відступи рло вертикалі у секціях desktop*/
+}
+
+html, body {
+    font-family: 'Comic Sans MS';
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--txt-01-color)
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Comic Sans MS';
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+p{
+    margin-bottom: 1em;
+}
+
+h1 { font-size: 2rem;} /*rem коефіцієнт від фонт сайз боді*/
+h2{ font-size:1.5rem}
+h3{ font-size:1.35rem;}
+
+
+header,
+section,
+footer {
+    padding-bottom: var(--vert-desk-pad);
+    padding-top: var(--vert-desk-pad);
+}
+
+.inside {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ipad-padding);
+    padding-right: var(--ipad-padding);
+}
+
+@media screen and (max-width:680px)  {
+    
+    .inside {
+    padding-left: var(--mob-padding);
+    padding-right: var(--mob-padding);
+}
+
+
+}
