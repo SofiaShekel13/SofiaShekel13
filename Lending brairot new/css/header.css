@@ -1,0 +1,99 @@
+
+
+header .row {
+    display: flex;
+    justify-content: space-between;/*вирівнювання по основній осі (main axis)*/
+    align-items: center;           /*вирівнювання по ортогональна осі (cross axis)*/
+    align-content: center;        /*вирівнювання рядів елементів по ортог. осі (cross axis)*/
+    flex-direction: row;          /* напрям головної осі*/
+    min-height: 100dvh;           /* дайнамік вюпорт хай*/
+    flex-wrap: wrap;
+     
+
+}
+
+header .row .col:last-child{
+   
+
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__sun {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16vw;
+}
+
+.hero__crocodilo {
+  position: absolute;
+  top: 0;
+  left: 51%;
+  width: 31vw;
+}
+
+.hero__pytanna {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+   width: 24vw;
+}
+
+.hero__trava {
+  position: absolute;
+  top: 72%;
+  left: 74%;
+  width: 26vw;
+}
+.hero__brainrot {
+  position: absolute;
+  top: 37%;
+  left: 1%;
+  width: 82vw;
+}
+
+.hero__tung {
+  position: absolute;
+  top: 33%;
+  left: 60%;
+  width: 13vw;
+}
+
+.hero__patapim {
+  position: absolute;
+  top: 68%;
+  left: -2%;
+  width: 17vw;
+}
+
+.hero__words {
+  position: absolute;
+  top: 21%;
+  left: 10%;
+  width: 40vw;
+}
+
+.hero__cat {
+  position: absolute;
+  top: 5%;
+  left: 26%;
+  width: 8.5vw;
+}
+
+.hero__mozok {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 100vw;
+  z-index: 2;
+}
