@@ -1,24 +1,25 @@
 :root {
-    --txt-01-color: #555;
-    --txt-02-color: #ccc;
+    --txt-01-color: #ffffff;
+    --txt-02-color: #0F32DF;
  --bg-03-color: #ddd;
- --btn-01-color: #900;
- --btn-02-color: #400;
- --mob-padding: 20px;
- --ipad-padding: 50px;
- --max-width: 1380px;
- --vert-desk-pad:50px; /*Відступи рло вертикалі у секціях desktop*/
- --vert-mob-pad:25px; /*Відступи рло вертикалі у секціях desktop*/
+ --btn-01-color: #9C0808;
+ --btn-02-color:  #F10000;
+  --btn-03-color: #ffffff ;
+ --mob-padding: 0px;
+ --ipad-padding: 0px;
+ --max-width: 2000px;
+ --vert-desk-pad:0px; /*Відступи рло вертикалі у секціях desktop*/
+ --vert-mob-pad:0px; /*Відступи рло вертикалі у секціях mobile*/
 }
 
 html, body {
     font-family: 'Comic Sans MS';
     font-optical-sizing: auto;
     font-weight: 400;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--txt-01-color)
+    font-size: 42px;
+    line-height: 67px;
+    color:var(--txt-01-color);
+    scroll-behavior: smooth;
 }
 
 
@@ -35,6 +36,10 @@ p{
 h1 { font-size: 2rem;} /*rem коефіцієнт від фонт сайз боді*/
 h2{ font-size:1.5rem}
 h3{ font-size:1.35rem;}
+h4{ font-size:1rem;}
+h5{ font-size:0.9rem;}
+
+
 
 
 header,
@@ -44,20 +49,10 @@ footer {
     padding-top: var(--vert-desk-pad);
 }
 
-.inside {
-    max-width: var(--max-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--ipad-padding);
-    padding-right: var(--ipad-padding);
+html {
+    scroll-padding-top: 90px;
 }
 
-@media screen and (max-width:680px)  {
-    
-    .inside {
-    padding-left: var(--mob-padding);
-    padding-right: var(--mob-padding);
-}
-
-
+body {
+    overflow-x: clip;
 }
